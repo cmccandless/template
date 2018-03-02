@@ -1,0 +1,18 @@
+{
+  "template": {
+    "init": {
+      "license": "MIT",
+      "author.username": "cmccandless",
+      "author.name": "Corey McCandless",
+      "pypi": {
+        "keywords": [
+          "python"
+        ],
+        "coverage.fail_under": 80,
+        "coverage.show_missing": true
+      },
+      "travis": {},
+      "coveralls": {}
+    }
+  }
+}

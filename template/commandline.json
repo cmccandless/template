@@ -1,0 +1,93 @@
+{
+    "modules": {
+        "template": {
+            "examples": [],
+            "args": [],
+            "modules": {
+                "config": {
+                    "examples": [],
+                    "args": [
+                        {
+                            "long": "configs",
+                            "nargs": "*",
+                            "metavar": "KEY=VALUE"
+                        },
+                        {
+                            "short": "-l",
+                            "long": "--list",
+                            "action": "store_true"
+                        },
+                        {
+                            "short": "-g",
+                            "long": "--get"
+                        }
+                    ]
+                },
+                "init": {
+                    "examples": [],
+                    "args": [
+                        {
+                            "long": "--in",
+                            "dest": "directory"
+                        },
+                        {
+                            "short": "-a",
+                            "long": "--author.username"
+                        },
+                        {
+                            "long": "--author.name"
+                        },
+                        {
+                            "short": "-l",
+                            "long": "--license",
+                            "choices": [
+                                "MIT"
+                            ]
+                        },
+                        {
+                            "short": "-m",
+                            "long": "--desc"
+                        }
+                    ],
+                    "modules": {
+                        "pypi": {
+                            "examples": [],
+                            "args": [
+                                {
+                                    "long": "package"
+                                },
+                                {
+                                    "short": "-k",
+                                    "long": "--keywords",
+                                    "nargs": "+"
+                                },
+                                {
+                                    "long": "--coverage.fail-under",
+                                    "type": "float"
+                                },
+                                {
+                                    "long": "--coverage.show-missing",
+                                    "type": "bool"
+                                }
+                            ]
+                        },
+                        "travis": {
+                            "examples": [],
+                            "args": [
+                            ]
+                        },
+                        "coveralls": {
+                            "examples": [],
+                            "args": [
+                                {
+                                    "long": "--token",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

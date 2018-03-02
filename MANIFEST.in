@@ -1,0 +1,3 @@
+include template/commandline.json
+include template/defaults.json
+include template/templates/*
